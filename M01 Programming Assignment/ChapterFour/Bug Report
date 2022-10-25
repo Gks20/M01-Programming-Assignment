@@ -1,0 +1,61 @@
+//Bug Report 4.23
+
+Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = ')'
+        at java.base/java.util.Formatter.parse(Formatter.java:2830)           
+        at java.base/java.util.Formatter.format(Formatter.java:2751)  
+        at java.base/java.io.PrintStream.format(PrintStream.java:1222)
+
+        at java.base/java.io.PrintStream.printf(PrintStream.java:1118)
+
+        at ChapterFour.main(ChapterFour.java:20)
+
+//Second run
+
+Exception in thread "main" java.util.InputMismatchException
+        at java.base/java.util.Scanner.throwFor(Scanner.java:943)
+        at java.base/java.util.Scanner.next(Scanner.java:1598)
+        at java.base/java.util.Scanner.nextDouble(Scanner.java:2569)
+        at ChapterFour.main(ChapterFour.java:14)
+
+//Full Scale
+
+Enter employees name : Smith
+Enter number of hours worked a week : 10
+Enter hourly pay : 9.75
+Enter federal tax rate : 0.20
+Enter state tax rate : 0.09
+Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = ')'
+        at java.base/java.util.Formatter.parse(Formatter.java:2830)
+        at java.base/java.util.Formatter.format(Formatter.java:2751)
+        at java.base/java.io.PrintStream.format(PrintStream.java:1222)
+        at java.base/java.io.PrintStream.printf(PrintStream.java:1118)
+        at ChapterFour.main(ChapterFour.java:19)
+
+//*FIXED */---------------------------------------------------------------------------------
+line 19 - System.out.printf - spelling error -  *System.out.println 
+
+
+*OUTPUT*
+
+Enter employees name : Smith
+Enter number of hours worked a week : 10
+Enter hourly pay : 9.75
+Enter federal tax rate : 0.20
+Enter state tax rate : 0.09
+Employee Name: Smith
+Hours Worked: 10.0
+Pay Rate: $9.75
+Gross Pay: $97.5
+Deductions:
+   Federal Witholding (20.0%): $19.5
+   State Witholding (9.0%): $8.775
+   Total Deduction: $28.275
+Enter state tax rate : 0.09
+Employee Name: SmithHours Worked: 10.0
+Pay Rate: $9.75
+Gross Pay: $97.5
+Deductions:
+   Federal Witholding (20.0%): $19.5
+   State Witholding (9.0%): $8.775
+   Total Deduction: $28.275
+Net Pay: $69.225

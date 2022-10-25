@@ -1,0 +1,4 @@
+//Bug Report 3.15
+
+*The method nextint() is undefined for the type Scanner [Ln 13, Col 27]
+FIXED : nextint -- spelling error -- nextInt*

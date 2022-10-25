@@ -1,0 +1,10 @@
+//Bug Report 2.3
+
+Program works as expected
+-"input" is still showing "not closed" but not sure if even needed.
+
+Input : 3 Feet 
+
+Output : 3.0Feet is0.915meters
+
+Not sure how to space out the in-between. 
